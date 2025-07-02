@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Nome do Medicamento -->
+    <TextView
+        android:id="@+id/tvNomeMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do medicamento"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FF000000" />
+
+    <!-- Dosagem -->
+    <TextView
+        android:id="@+id/tvDosagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dosagem"
+        android:textSize="16sp"
+        android:textColor="#FF000000" />
+
+    <!-- Horário -->
+    <TextView
+        android:id="@+id/tvHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horário"
+        android:textSize="16sp"
+        android:textColor="#FF000000" />
+
+    <!-- Marcar como Tomado -->
+    <CheckBox
+        android:id="@+id/cbTomado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomado"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF000000" />
+
+    <!-- Botões de Editar e Excluir -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#1976D2" />
+
+        <Button
+            android:id="@+id/btnExcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir"
+            android:textColor="#FFFFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

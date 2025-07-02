@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/txtTituloCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Medicamento"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:hint="@string/nome_medicamento"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:maxWidth="600dp"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/etDosagem"
+        android:hint="@string/dosagem_exemplo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:maxWidth="600dp"
+        android:inputType="text"
+        android:autofillHints="dosage"
+        android:textColor="#FF000000" />
+
+    <EditText
+        android:id="@+id/etHorario"
+        android:hint="@string/horario_exemplo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="48dp"
+        android:maxWidth="600dp"
+        android:inputType="time"
+        android:autofillHints="time"
+        android:textColor="#FF000000" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:text="@string/salvar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxWidth="600dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnVerLista"
+        android:text="Ver Lista de Medicamentos"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:maxWidth="600dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
